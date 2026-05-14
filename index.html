@@ -7,7 +7,7 @@
   <title>Conoce cómo Metafinanciera — Historias reales, beneficios reales.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,7 +24,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                    Roboto, Helvetica, Arial, sans-serif;
       background: #fff;
       color: var(--text);
@@ -33,64 +33,70 @@
     }
 
     /* ─── HERO ─── */
+    /* target ~378px tall at 1366px wide */
     .hero {
       background: var(--grad);
-      padding: 56px 24px 72px;
+      padding: 28px 24px 28px;
       text-align: center;
       color: #fff;
     }
 
     .hero-logo-img {
-      height: 30px;
+      height: 25px;       /* 25.4835px exacto */
       width: auto;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
 
+    /* 27pt × 1.333 = 36px — Nunito Regular */
     .hero-eyebrow {
-      font-size: clamp(18px, 2vw, 24px);
+      font-size: 36px;
       font-weight: 400;
-      color: rgba(255,255,255,.82);
-      margin-bottom: 4px;
+      color: rgba(255,255,255,.85);
+      line-height: 1.2;
+      margin-bottom: 2px;
     }
 
+    /* 55pt × 1.333 = 73px — Nunito Black */
     .hero-title {
-      font-size: clamp(52px, 9vw, 9999px);
-      font-weight: 700;
-      line-height: 1.0;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
+      font-size: 73px;
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 2px;
     }
 
+    /* 27pt = 36px — Nunito Regular */
     .hero-subtitle {
-      font-size: clamp(20px, 2.5vw, 30px);
-      font-weight: 300;
-      color: rgba(255,255,255,.82);
-      margin-bottom: 40px;
+      font-size: 36px;
+      font-weight: 400;
+      color: rgba(255,255,255,.85);
+      line-height: 1.2;
+      margin-bottom: 16px;
     }
 
     .hero-divider {
       width: 1px;
-      height: 40px;
-      background: rgba(255,255,255,.3);
-      margin: 0 auto 32px;
+      height: 28px;
+      background: rgba(255,255,255,.35);
+      margin: 0 auto 16px;
     }
 
-    .hero-tagline {
-      font-size: clamp(14px, 1.2vw, 17px);
-      font-weight: 600;
-      color: rgba(255,255,255,.9);
-      margin-bottom: 8px;
+    /* dos renglones juntos */
+    .hero-body {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255,255,255,.80);
+      line-height: 1.6;
+      margin: 0 auto 20px;
+      max-width: 480px;
     }
-
-    .hero-desc {
-      font-size: clamp(13px, 1.1vw, 15px);
-      color: rgba(255,255,255,.65);
-      max-width: 380px;
-      margin: 0 auto 36px;
-      line-height: 1.65;
+    .hero-body strong {
+      font-weight: 700;
+      color: #fff;
+      display: block;
+      margin-bottom: 2px;
     }
 
     .btn-coral {
@@ -120,7 +126,7 @@
       margin: 0 auto;
       font-size: clamp(15px, 1.8vw, 18px);
       font-weight: 700;
-      color: #0f2660;
+      color: #ffffff;
       line-height: 1.65;
     }
 
@@ -162,6 +168,9 @@
     .feature-row.vr .text-col  { order: 1; }
 
     @media (max-width: 768px) {
+      .hero-title    { font-size: clamp(36px, 10vw, 73px); }
+      .hero-eyebrow,
+      .hero-subtitle { font-size: clamp(18px, 5vw, 36px); }
       .feature-inner { grid-template-columns: 1fr; gap: 32px; }
       .feature-row.vr .video-col { order: -1; }
       .feature-row.vr .text-col  { order: 2; }
@@ -284,8 +293,8 @@
       <h1 class="hero-title" id="hero-title">Metafinanciera</h1>
       <p class="hero-subtitle">impulsa tu crecimiento</p>
       <div class="hero-divider" aria-hidden="true"></div>
-      <p class="hero-tagline">Historias reales, beneficios reales.</p>
-      <p class="hero-desc">
+      <p class="hero-body">
+        <strong>Historias reales, beneficios reales.</strong>
         Descubre nuestros programas, servicios y todo lo que puedes lograr con el crédito adecuado.
       </p>
       <a href="https://www.metafinanciera.com/"
