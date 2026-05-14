@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Conoce cómo Metafinanciera — Historias reales, beneficios reales.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -21,8 +24,8 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-                   Helvetica, Arial, sans-serif;
+      font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                   Roboto, Helvetica, Arial, sans-serif;
       background: #fff;
       color: var(--text);
       line-height: 1.6;
@@ -37,18 +40,13 @@
       color: #fff;
     }
 
-    .hero-logo {
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #fff;
+    .hero-logo-img {
+      height: 52px;
+      width: auto;
       margin-bottom: 28px;
-    }
-    .hero-logo sup {
-      font-size: 13px;
-      font-weight: 400;
-      vertical-align: super;
-      letter-spacing: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero-eyebrow {
@@ -110,6 +108,21 @@
     }
     .btn-coral:hover { background: var(--coral-h); transform: translateY(-2px); }
     .btn-coral:focus-visible { outline: 3px solid rgba(255,255,255,.6); outline-offset: 3px; }
+
+    /* ─── BANNER AZUL ─── */
+    .banner-blue {
+      background: #72c4d8;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    .banner-blue p {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: clamp(15px, 1.8vw, 18px);
+      font-weight: 700;
+      color: #0f2660;
+      line-height: 1.65;
+    }
 
     /* ─── FEATURE ROWS ─── */
     .feature-row {
@@ -246,7 +259,9 @@
   <!-- ── HERO ── -->
   <header>
     <section class="hero" aria-labelledby="hero-title">
-      <p class="hero-logo">meta<sup>®</sup></p>
+      <img src="Logotipo-Metafinanciera-Blanco.png"
+           alt="Metafinanciera"
+           class="hero-logo-img">
       <p class="hero-eyebrow">Conoce cómo</p>
       <h1 class="hero-title" id="hero-title">Metafinanciera</h1>
       <p class="hero-subtitle">impulsa tu crecimiento</p>
@@ -261,6 +276,11 @@
         Solicitar información
       </a>
     </section>
+
+    <div class="banner-blue">
+      <p>En Metafinanciera, cada crédito va acompañado. Creamos programas que impulsan
+        tu negocio, premian tu puntualidad y te ayudan a aprovechar mejor cada ciclo de crédito.</p>
+    </div>
   </header>
 
   <!-- ── SECCIONES ALTERNADAS ── -->
